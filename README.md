@@ -1,4 +1,3 @@
-# Create Concise Final Summary
 summary = f"""
 {'='*80}
 
