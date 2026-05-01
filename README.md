@@ -1,18 +1,16 @@
-# Create Concise Final Summary
-summary = f"""
-{'='*80}
+================================================================================
 
                     NOVAPAY FRAUD DETECTION PROJECT
-                            SUMMARY REPORT
+                        FINAL SUMMARY REPORT
 
-{'='*80}
+================================================================================
 
 📊 DATASET OVERVIEW
-    * Total Transaction: {len(df):,}
-    * Fraud Cases: {df['is_fraud'].sum():,} ({df['is_fraud'].mean():.2%})
-    * Train Set: {len(train_df):,} rows ({train_df['is_fraud'].sum()} fraud)
-    * Test Set: {len(test_df):,} rows ({test_df['is_fraud'].sum()} fraud)
-    * Features Engineered: {len(all_features)} total
+    * Total Transaction: 10,780
+    * Fraud Cases: 981 (9.10%)
+    * Train Set: 8,624 rows (673 fraud)
+    * Test Set: 2,156 rows (308 fraud)
+    * Features Engineered: 28 total
 
 🎯 MODEL PERFORMANCE (Test Set)
 
@@ -48,15 +46,7 @@ summary = f"""
     -> Demonstrated 8.42x lift with velocity-based features
     -> Ready for production deployment
 
-{'='*80}
+================================================================================
                         ✔️ PROJECT SUCCESSFULLY COMPLETED
-{'='*80}
-"""
-print(summary)
-
-# Save summary file 
-with open('../FINAL_SUMMARY.md', 'w') as f:
-    f.write(summary)
-
-print("\n📄 Summary saved to: FINAL SUMMARY.md")
-print("🎁 NovaPay Fraud Detection Project Complete!")
+================================================================================
+🎁 NovaPay Fraud Detection Project Complete!
